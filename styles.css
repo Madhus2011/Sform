@@ -1,0 +1,105 @@
+
+body{
+	width:100%;
+	margin:0;
+	background-image: url("blue green.jpg");
+     background-repeat: no-repeat;
+  background-size: cover;
+	color:white;
+	font-family:monospace;
+    font-size:16px;
+}
+
+/*label element to display in block for different labels and margin 0.5rem 0 for space between lines*/
+label{
+	display:block;
+	margin:0.5rem 0;
+  align-items: center;
+}
+/* to align heading and paragraph to center */
+h1,p{
+text-align:center;
+}
+
+
+/* to align form to center */
+form{
+  margin:auto;
+  max-width:700px;
+  min-width:300px;
+  width:60vw;
+   padding:2em;
+   float:center;
+}
+
+/* for fieldset*/
+
+fieldset{
+  border:1px solid white;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  background-color:black;
+  opacity:0.7;
+ 
+}
+/* for the last fieldset submit as it is not in position*/
+fieldset:last-of-type
+{
+  border-bottom:none;
+ }
+ 
+ /* to adjust width and margins of  input, textarea, and select*/
+ input,textarea,select{
+  margin-top:10px;
+   margin-bottom:0px;
+    margin-left:0px;
+     margin-right:0px;
+   width:100%;
+   min-height:2em;
+   
+}
+
+
+ /* to align radio buttons and checkboxes in a line next to their respective fields. to set widthto 100%*/
+ .inline{
+  width:unset;
+}
+/* Add some space between the .inline elements and the label text*/
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align:middle;
+}
+/*To make the input and textarea elements blend in with the background theme */
+
+
+input, textarea {
+  border: 1px solid white;
+  color:solid black;  /*user input text color*/
+  font-family:monospace;  
+  font-size:20px;
+}
+/* style submit button*/
+input[type=submit]{
+  display:block;
+  width:100%;
+  height:2em;
+  color: white;
+  background:green;
+  font-family:arial rounded mt bold;
+  font-size:1.1rem;
+  border-color:none;
+  margin:0 auto;/* technique used to center the form to center the submit button*/
+  min-width:550px;
+    margin-top: 1em;
+	margin-left:auto;
+	margin-bottom:1em;
+	margin-right:auto;
+}
+input[type="file"]/*Using another attribute selector,
+                    style the input with a type of file to be the same padding as the other input elements*/
+{
+  padding:1px 2px;
+}

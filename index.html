@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content-type="text/html" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+<h1>freeCodeCamp Survey Form</h1>
+<p>Thank you for taking the time to help us improve the platform</p>
+</header>
+<!--starting the form-->
+<form action="Thank you.html" method="get">
+<fieldset>
+<!--starting the name-->
+<label for="name-label">Name <input id="name-label" name="name" type="text" required/></label>
+<!--starting the email-->
+<label for="email-label">Email <input id="email-label" name="email"type="email" required/></label>
+<!--starting the Age-->
+<label for="age-label">Age<span>(optional)</span> <input id="age-label" name="age"type="number" min="10" max="100" required/></label>
+
+
+<!--starting the current role-->
+<label for="current role">Which option best describes your current role? 
+ <select id="current role" name="role">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+		   <option value="5">Other</option>
+</select>		  
+</label>
+
+<!--starting the recommend to friend-->
+<p1>Would you recommend freeCodeCamp to a friend?</p1> 
+<label><input class="inline" type="radio" name="recommend" id="definitely"/> Definitely</label>
+<label><input class="inline" type="radio" name="recommend" id="maybe"/> Maybe</label>
+<label><input class="inline" type="radio" name="recommend" id="not sure"/> Not sure</label>
+
+
+
+<br>
+<!--starting the favorite feature-->
+<label for="favorite feature">What is your favorite feature of freeCodeCamp? 
+ <select id="favorite feature" name="liked feature">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+		  <option value="4">Open Source</option>
+ </select>
+</label>
+<br>
+<!--starting the would like to see improved-->
+<label for="improved">What would you like to see improved?<span>(Check all that apply)</span> </p>
+<label><input class="inline" type="checkbox" id="improved" name="select"> Front-end Projects</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Back-end Projects</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Data Visualization</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Challenges</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Open Source Community</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Gitter help rooms</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Videos</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> City Meetups</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Wiki</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Forum</label>
+<label><input class="inline" type="checkbox"  id="improved" name="select"> Additional Courses</label>
+
+
+
+
+<br>
+<!--starting the comments/suggestions-->
+<label for="comments">Any comments or suggestions? 
+<textarea id="comments" name="commentssections" rows="3" cols="30"placeholder="Enter your comments here"></textarea>
+
+
+</label>
+
+<!--Submit button-->
+<input type="submit" value="Submit">
+</form>
+</fieldset>
+<footer></footer>
+</body>
+</html>
